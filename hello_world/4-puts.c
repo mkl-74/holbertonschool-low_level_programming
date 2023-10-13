@@ -1,8 +1,12 @@
 #include <stdio.h>
 
-/*Ecrire une chaine de caracter*/
-
-int main(int argc, char *argv[])
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ *
+ */
+int main(void)
 {
 	puts("Programming is like building a multilingual puzzle");
 	return (0);
