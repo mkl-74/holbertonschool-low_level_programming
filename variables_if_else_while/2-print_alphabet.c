@@ -9,14 +9,15 @@
 
 
 int main(void)
-
 {
-
 	int car;
 
 	for (car = 'a'; car <= 'z'; car++)
 	{
 		putchar(car);
 	}
-		putchar(\n);
+
+	putchar('\n');
+
+	return (0);
 }
