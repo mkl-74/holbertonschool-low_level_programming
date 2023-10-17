@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+
+int main(void)
+{
+	int nbr;
+
+		for (nbr = 0; nbr <= 9; nbr++)
+{
+
+		printf("%d\n", nbr);
+
+}
+
+
+
+	return (0);
+
+}
