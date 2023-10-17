@@ -16,7 +16,7 @@ int main(void)
 	for (incr = debut; incr <= fin; incr++)
 	{
 		putchar('0'+incr);
-		
+
 	}
 	putchar('\n');
 
