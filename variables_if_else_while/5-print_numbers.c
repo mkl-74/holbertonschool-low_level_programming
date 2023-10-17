@@ -16,7 +16,7 @@ int main(void)
 		printf("%d", nbr);
 
 }
-		printf("/n")
+		printf('/n')
 
 
 	return (0);
