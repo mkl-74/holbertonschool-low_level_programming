@@ -3,6 +3,6 @@
 
 int _putchar(char c);
 
-/*ecris la function*/
+/*prototype*/
 
 #endif
