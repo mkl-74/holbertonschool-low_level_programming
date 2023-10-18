@@ -1,22 +1,19 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * main - check the code
  *
  * Return: Always 0.
  */
-int main(void)
+void print_alphabet(void)
 {
 
-char print_alphabet;
+char alphabet;
 
-	for (print_alphabet = 'a'; print_alphabet <= 'z'; print_alphabet++)
+	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 {
-	putchar (print_alphabet);
+	_putchar (alphabet);
 }
-	putchar ('\n');
+	_putchar ('\n');
 
-
-	return (0);
 }
