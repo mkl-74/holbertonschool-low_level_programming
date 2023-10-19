@@ -3,24 +3,17 @@
 
 /**
  *  _abs(int) - return the absolute value of the number
- * @n:
+ * @c:
  *
- * Return: Absolute number
+ * Return: 0
  *
  */
-int _abs(int)
+int _abs(int nbr)
 {
-	int nbr;
-
-	if (nbr < 0)
+	if (nbr > 0 || nbr == 0)
 	{
-		nbr = -nbr;
+	return (nbr);
 	}
-		printf("%d\n", nbr);
-
 	else
-		printf("%d\n", nbr)
-
-
-	return (0);
+	return (nbr * -1);
 }
