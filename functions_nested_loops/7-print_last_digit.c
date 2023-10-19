@@ -1,17 +1,18 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
- * _print_last_digit - function that display the last digit of a number
- * @nbr:  is the int that will use for the argument of the function
+ * print_last_digit - function that display the last digit of a number
+ * @n:  is the int that will use for the argument of the function
  * Return: 0
  */
-int print_last_digit(int nbr);
+int print_last_digit(int n)
 {
-	int nbr;
 	int last;
 
-	last = nbr % 10;
+	last = n % 10;
 
-	printf("%d\n", last)
+
+	putchar('0' + last);
+
+	return (last);
 }
