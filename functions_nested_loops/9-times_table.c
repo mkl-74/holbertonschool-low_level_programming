@@ -18,13 +18,13 @@ void times_table(void)
 		{
 			sum = line * column;
 			if (column > 0 && sum <= 9)
-			       _putchar(' ');	
+			       /*_putchar(' ');*/	
 			if (sum >= 10)
 				_putchar(sum / 10 + '0');
 			_putchar(sum % 10 + '0');
 			if (column < 9)
 				_putchar(',');
-			/*_putchar(' ');*/
+			_putchar(' ');
 		}
 		 _putchar('\n');
 	}
