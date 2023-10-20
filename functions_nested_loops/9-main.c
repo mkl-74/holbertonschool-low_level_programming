@@ -9,6 +9,6 @@
  */
 int main(void)
 {
-	void times_table(void);
-	return (0);
+    times_table();
+    return (0);
 }

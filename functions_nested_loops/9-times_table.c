@@ -6,22 +6,26 @@
  *
  *
  */
-void times_table(void);
+void times_table(void)
 {
-	int nbr1;
-	int nbr2;
-	int produit;
+	int line;
+	int column;
+	int sum;
 
-	for (nbr1 = 0; nbr1 <= 9; nbr1++)
+	for (line = 0; line <= 9; line++)
 	{
-		for (nbr2 = 0; nbr2 <= 9; nbr2++)
+		for (column = 0; column <= 9; column++)
 		{
-			produit = nbr1 * nbr2;
-			{
-	_putchar(nbr1 + '0')
-	
+			sum = line * column;
+			if (sum > 10)
+				_putchar(sum / 10 + '0');
+			_putchar(sum % 10 + '0');
+			_putchar(',');
+			_putchar(' ');
 
-
+		}
+		 _putchar('\n');
+	}
 
 
 }
