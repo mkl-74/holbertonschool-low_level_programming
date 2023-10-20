@@ -17,12 +17,14 @@ void times_table(void)
 		for (column = 0; column <= 9; column++)
 		{
 			sum = line * column;
-			if (sum > 10)
+			if (column > 0 && sum <= 9)
+			       _putchar(' ');	
+			if (sum >= 10)
 				_putchar(sum / 10 + '0');
 			_putchar(sum % 10 + '0');
-			_putchar(',');
+			if (column < 9)
+				_putchar(',');
 			_putchar(' ');
-
 		}
 		 _putchar('\n');
 	}
