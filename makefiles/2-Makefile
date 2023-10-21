@@ -1,6 +1,7 @@
-src = main.c 
-obj = main.o
-name = school
+CC = gcc
+SRC = main.c 
+OBJ= main.o
+NAME  = school
 
-all : obj
+all : OBJ
 	gcc main.c main.o -o school
