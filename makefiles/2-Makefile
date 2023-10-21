@@ -1,0 +1,7 @@
+cc = gcc
+src = main.c 
+obj = main.o
+name = school
+
+all : obj
+	cc main.c main.o -o school
