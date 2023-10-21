@@ -4,4 +4,4 @@ obj = main.o
 name = school
 
 all : obj
-	cc main.c main.o -o school
+	gcc main.c main.o -o school
