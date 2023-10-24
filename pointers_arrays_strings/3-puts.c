@@ -6,7 +6,6 @@
  * @str is a string
  *
  * Return: void
- *
  */
 void _puts(char *str)
 {
