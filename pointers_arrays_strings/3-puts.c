@@ -5,7 +5,7 @@
  * puts - print a string to stdout.
  * @str is a string
  *
- * Return: string
+ * Return: void
  *
  */
 void _puts(char *str)
@@ -14,7 +14,7 @@ void _puts(char *str)
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		putchar(str[i]'\n');
+		putchar(str[i]);
 
 	}
 }
