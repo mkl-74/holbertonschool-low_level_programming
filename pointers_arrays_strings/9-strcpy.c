@@ -1,19 +1,4 @@
 #include "main.h"
-#include <stddef.h>
-#include <stdio.h>
-#include <string.h>
-
-/**
- * _strcpy - copy the string pointed to, by src to dest.
- * @dest: blabla
- * @src: blabla
- *
- *
- * Return: 0
- */
-char *_strcpy(char *dest, char *src)
-{
-#include "holberton.h"
 #include <stdio.h>
 /**
  * _strcpy - copies the string pointed to by src
@@ -35,4 +20,4 @@ char *_strcpy(char *dest, char *src)
 		count++;
 	}
 	return (dest);
-}}
+}
