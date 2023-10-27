@@ -1,20 +1,23 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * _strncat - add src to end dest and overwrite '\0'
- * @dest: 
+ * @dest:
  * @src:
  *
- *Return: dest
+ * Return: dest
  *
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	while (*dest != '\0') {
+	while (*dest != '\0')
+	{
 	dest++;
 	}
 
-	while (*src != '\0' && n > 0) {
+	while (*src != '\0' && n > 0)
+	{
 	*dest = *src;
 	dest++;
 	src++;
