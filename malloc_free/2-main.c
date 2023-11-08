@@ -20,4 +20,8 @@ int main(void)
     printf("%s\n", s);
     free(s);
     return (0);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> cfc4a44833405bd7baa67e43ba632950936b6790
