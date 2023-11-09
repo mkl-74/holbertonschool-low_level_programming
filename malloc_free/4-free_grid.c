@@ -4,8 +4,8 @@
 
 /**
  * free_grid - frees a 2 dimensional grid
- * @grid: 
- * @height:
+ * @grid: check the array is NULL
+ * @height: check height is no positive
  * Return: Free grid
  *
  */
