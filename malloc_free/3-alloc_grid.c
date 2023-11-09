@@ -4,8 +4,8 @@
 
 /**
  * alloc_grid - return a pointer of an array
- * @: width
- * @: height
+ * @width: number width of array
+ * @height: number height for array
  * Return: Grid
  */
 int **alloc_grid(int width, int height)
@@ -16,13 +16,13 @@ int **alloc_grid(int width, int height)
 
 	if (width <= 0 || height <= 0)
 		{
-		return NULL;
+		return (NULL);
 		}
 
 	grid = malloc(height * sizeof(int *));
 	if (grid == NULL)
 		{
-		return NULL;
+		return (NULL);
 		}
 
 	for (i = 0; i < height; i++)
@@ -35,7 +35,7 @@ int **alloc_grid(int width, int height)
 			free(grid[j]);
 			}
 	free(grid);
-	return NULL;
+	return (NULL);
 		}
 	}
 	for (i = 0; i < height; i++)
@@ -46,5 +46,5 @@ int **alloc_grid(int width, int height)
 		}
 	}
 
-	return grid;
+	return (grid);
 }
