@@ -47,6 +47,6 @@ char *p;
 		sY++;
 		}
 	p[sX] = '\0';
-	free (p);
+
 	return (p);
 }
