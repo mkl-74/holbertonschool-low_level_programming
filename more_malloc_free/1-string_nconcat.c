@@ -9,11 +9,12 @@
  * @n: max number of charactere
  * Return: result of p
  */
+
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int sX = 0;
-	unsigned int sY = 0;
-	char *p;
+unsigned int sX = 0;
+unsigned int sY = 0;
+char *p;
 
 	if (s2 == NULL)
 		{
@@ -32,7 +33,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		{
 		return (NULL);
 		}
-		sX = 0;
+	sX = 0;
 	while (s1[sX] != '\0')
 		{
 		p[sX] = s1[sX];
