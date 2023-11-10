@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - 
+ * main - void
  *
  *
  * Return: name of file
