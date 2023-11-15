@@ -3,9 +3,9 @@
 #include "dog.h"
 
 /**
+ * free_dog - free memory
  *
- *
- *
+ * @d: structure dog_t
  *
  *
  */
@@ -15,11 +15,6 @@ void free_dog(dog_t *d)
 	{
 	return;
 	}
-	free (d);
-
-
-
-
-
-
+	free(d);
 }
+
