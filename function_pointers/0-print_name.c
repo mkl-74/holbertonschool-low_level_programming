@@ -11,6 +11,12 @@
 */
 void print_name(char *name, void (*f)(char *))
 {
+<<<<<<< HEAD
 	if (name != NULL && f != NULL)
 	f(name);
 }
+=======
+    if (name != NULL && f != NULL)
+    f(name);
+}
+>>>>>>> b7441f673161e55b051a477dd38bd078cc36b83b
