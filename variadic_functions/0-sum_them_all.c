@@ -7,14 +7,15 @@
 * sum_them_all - function that returns the sum of all its parameters
 * @n: number of arguments
 *
-* return: sum
+* return: value of sum_them_all
 *
 */
 int sum_them_all(const unsigned int n, ...)
 {
 	va_list args;
 	int sum = 0;
-    unsigned int i = 0;
+
+	unsigned int i = 0;
 
 	if (n == 0)
 		return (0);
