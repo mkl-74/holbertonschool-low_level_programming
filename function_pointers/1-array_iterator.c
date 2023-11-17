@@ -9,7 +9,7 @@
  * @action: ptr structur
  * @size: case of array
  * @array_iterator: function that execut a function
- * return: void
+ * Return: void
  *
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
