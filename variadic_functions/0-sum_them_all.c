@@ -4,11 +4,10 @@
 #include <stdarg.h>
 
 /**
-* sum_them_all - function that returns the sum of all its parameters
+* sum_them_all - function that returns the sum of all its parameters.
 * @n: number of arguments
-*
-* return: value of sum_them_all
-*
+* @...: all integer to add
+* Return: sum of integer
 */
 int sum_them_all(const unsigned int n, ...)
 {
