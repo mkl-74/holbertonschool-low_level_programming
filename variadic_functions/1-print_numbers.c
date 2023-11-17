@@ -4,10 +4,10 @@
 #include <stdarg.h>
 
 /**
-*
-*
-*
-*
+* print_numbers - print a number following a separator
+* @separator: print separator between number
+* @n: number of integer in the function
+* @...: list with inger to print
 *
 *
 */
