@@ -3,12 +3,12 @@
 #include "function_pointers.h"
 
 /**
- *
- * array_iterator -  executes a function given as a parameter on each element of an array.
+ * array_iterator -  executes a function given as a
+ * parameter on each element of an array.
  * @array: ptr array
  * @action: ptr structur
  * @size: case of array
- *
+ * @array_iterator: function that execut a function
  * return: void
  *
  */
