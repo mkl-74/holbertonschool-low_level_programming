@@ -1,20 +1,24 @@
 #include "lists.h"
 
 /**
- * get_dnodeint_at_index - get node by index
- * @head:list
- * @index:index of element
- * Return: element by index
+ * add_dnodeint - add new element at begin
+ * @head:pointer
+ * @n:element in list
+ * Return:new element
  */
-dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
+dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
-	unsigned int c;
+	dlistint_t *new;
 
-	for (c = 0; c < index && head->next; c++)
-	{
-		head = head->next;
-	}
-	if (c < index)
+	new = malloc(sizeof(dlistint_t));
+	if (new == NULL)
 		return (NULL);
-	return (head);
+
+	new->prev = NULL;
+	new->next = *head;
+	new->n = n;
+	if (*head != NULL)
+		(*head)->prev = new;
+	*head = new;
+	return (new);
 }
