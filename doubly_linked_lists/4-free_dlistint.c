@@ -1,34 +1,19 @@
 #include "lists.h"
 
 /**
- * add_dnodeint_end - add element at the end of the list
+ * free_dlistint - free a list
  * @head:list
- * @n:element in list
- * Return:new element or NULL if failed
+ * Return:void
  */
-dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
+void free_dlistint(dlistint_t *head)
 {
-	dlistint_t *new, *start;
+	dlistint_t *start, *check;
 
-	start = *head;
-	new = malloc(sizeof(dlistint_t));
-	if (new == NULL)
-		return (NULL);
-	if (*head == NULL)
+	start = head;
+	while (start != NULL)
 	{
-		new->next = NULL;
-		new->n = n;
-		new->prev = NULL;
-		*head = new;
-		return (new);
+		check = start->next;
+		free(start);
+		start = check;
 	}
-	while (start->next)
-	{
-		start = start->next;
-	}
-	start->next = new;
-	new->prev = start;
-	new->next = NULL;
-	new->n = n;
-	return (new);
 }
