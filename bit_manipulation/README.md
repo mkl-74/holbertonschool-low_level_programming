@@ -9,4 +9,3 @@
 4. 100 - Write a function that sets the value of a bit to 0 at a given index.
 
 5. 101 - Write a function that returns the number of bits you would need to flip to get from one number to another.
-
