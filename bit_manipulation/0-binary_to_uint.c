@@ -1,47 +1,20 @@
-#include "main.h"
+#include "lists.h"
 
 /**
- * _strlen - lenght of string
- * @s:char
- * Return:int
+ * print_dlistint - print element in list
+ * @h:struct list
+ * Return:list len
  */
-int _strlen(const char *s)
+size_t print_dlistint(const dlistint_t *h)
 {
 	int i;
+	size_t len = 0;
 
-		for (i = 0; s[i] != '\0'; i++)
-		{
-			continue;
-		}
-return (i);
-}
-/**
- * binary_to_uint - convert binary to unsigned int
- * @b:string from 0 and 1 else NULL
- *
- * Return:unsigned int
- */
-unsigned int binary_to_uint(const char *b)
-{
-	unsigned int k = 1;
-	unsigned int i = 0;
-	int c;
-	unsigned int len;
-
-	if (b == NULL)
-		return (0);
-
-	len = _strlen(b);
-
-	for (c = len - 1; c >= 0; c--)
+	for (i = 0; h; i++)
 	{
-	if (b[c] != '0' && b[c] != '1')
-		return (0);
-	if (b[c] == '1')
-	{
-		i += k;
+		printf("%d\n", h->n);
+		h = h->next;
+		len++;
 	}
-	k *= 2;
-}
-	return (i);
+return (len);
 }
