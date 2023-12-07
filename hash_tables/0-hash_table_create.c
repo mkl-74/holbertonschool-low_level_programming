@@ -1,6 +1,6 @@
+#include "hashtable.h"
 
-
-int hachage(char *chaine)
+hash_table_t *hash_table_create(unsigned long int size)
 {
     int i = 0, nombreHache = 0;
 
