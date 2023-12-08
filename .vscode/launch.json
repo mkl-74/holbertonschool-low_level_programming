@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/workspaces/holbertonschool-low_level_programming",
-      "program": "/workspaces/holbertonschool-low_level_programming/build/Debug/outDebug",
+      "cwd": "/workspaces/holbertonschool-low_level_programming/hash_tables",
+      "program": "/workspaces/holbertonschool-low_level_programming/hash_tables/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
