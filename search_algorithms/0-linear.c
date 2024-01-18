@@ -1,27 +1,29 @@
 #include "search_algos.h"
-
 /**
- * linear_search - Recherche linéaire dans un tableau
- * @array: Pointeur vers le tableau
- * @size: Taille du tableau
- * @value: Valeur à rechercher dans le tableau
+ * linear_search - linear search algorithm
+ * @array: array of ints
+ * @size: size of array
+ * @value: value to search for
+ * Return: position or -1 if not found
  *
- * Return: L'index de la première occurrence de la valeur dans le tableau,
- *         ou -1 si la valeur n'est pas présente.
  */
 int linear_search(int *array, size_t size, int value)
 {
-    size_t i;
+	int i = 0;
 
-    if (array((void *)0)NULL)
-        return -1;
+	if (array == NULL)
+		return (-1);
 
-
-    for (i = 0; i < size; i++)
-    {
-        if (array[i] == value)
-            return (i);
-    }
-
-    return -1;
+	while (i < (int)size)
+	{
+		if (array[i] == value)
+		{
+			printf("Value checked array[%d] = [%d]\n", i, array[i]);
+			return (i);
+		}
+		else
+			printf("Value checked array[%d] = [%d]\n", i, array[i]);
+		i++;
+	}
+	return (-1);
 }
